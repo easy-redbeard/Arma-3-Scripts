@@ -1,0 +1,180 @@
+_casspir = createVehicle ["B_G_Van_01_transport_F", (getPos groundspawn), [], 0, "CAN_COLLIDE"];
+_azimuth = getDir groundspawn;
+_casspir setdir _azimuth;
+//Clear Onboard Cargo
+clearItemCargoGlobal _casspir;
+clearWeaponCargoGlobal _casspir;
+clearMagazineCargoGlobal _casspir;
+clearBackpackCargoGlobal _casspir;
+sleep 1;
+//Shields
+_casspirshield1 = createVehicle ["B_shield_lxWS", (getPos groundspawnaux), [], 0, "CAN_COLLIDE"];
+_casspirshield1 attachTo [_casspir,[0,-3.35,-0.9]]; 
+_casspirshield1 animateSource ["Door_1_noSound_source", 1, true];
+_casspirshield1 setdir 180; 
+_casspirshield1 enableweapondisassembly false; 
+sleep 1;
+_casspirshield2 = createVehicle ["B_shield_lxWS", (getPos groundspawnaux), [], 0, "CAN_COLLIDE"];
+_casspirshield2 attachTo [_casspir,[0.57,-3.35,-0.9]]; 
+_casspirshield2 animateSource ["Door_1_noSound_source", 1, true]; 
+_casspirshield2 setdir 180; 
+_casspirshield2 enableweapondisassembly false;
+sleep 1;
+_casspirshield3 = createVehicle ["B_shield_lxWS", (getPos groundspawnaux), [], 0, "CAN_COLLIDE"];
+_casspirshield3 attachTo [_casspir,[-0.57,-3.35,-0.9]]; 
+_casspirshield3 animateSource ["Door_1_noSound_source", 1, true];  
+_casspirshield3 setdir 180; 
+_casspirshield3 enableweapondisassembly false;
+sleep 1;
+_casspirshield4 = createVehicle ["B_shield_lxWS", (getPos groundspawnaux), [], 0, "CAN_COLLIDE"];
+_casspirshield4 attachTo [_casspir,[-0.95,-2.95,-0.95]]; 
+_casspirshield4 animateSource ["Door_1_noSound_source", 1, true];  
+_casspirshield4 setdir 270; 
+_casspirshield4 enableweapondisassembly false;
+sleep 1;
+_casspirshield5 = createVehicle ["B_shield_lxWS", (getPos groundspawnaux), [], 0, "CAN_COLLIDE"];
+_casspirshield5 attachTo [_casspir,[-0.95,-2.3,-0.95]]; 
+_casspirshield5 animateSource ["Door_1_noSound_source", 1, true]; 
+_casspirshield5 setdir 270; 
+_casspirshield5 enableweapondisassembly false;
+sleep 1;
+_casspirshield6 = createVehicle ["B_shield_lxWS", (getPos groundspawnaux), [], 0, "CAN_COLLIDE"];
+_casspirshield6 attachTo [_casspir,[-0.95,-1.8,-0.95]]; 
+_casspirshield6 animateSource ["Door_1_noSound_source", 1, true]; 
+_casspirshield6 setdir 270; 
+_casspirshield6 enableweapondisassembly false;
+sleep 1;
+_casspirshield7 = createVehicle ["B_shield_lxWS", (getPos groundspawnaux), [], 0, "CAN_COLLIDE"];
+_casspirshield7 attachTo [_casspir,[-0.95,-1.3,-0.95]]; 
+_casspirshield7 animateSource ["Door_1_noSound_source", 1, true];  
+_casspirshield7 setdir 270; 
+_casspirshield7 enableweapondisassembly false;
+sleep 1;
+_casspirshield8 = createVehicle ["B_shield_lxWS", (getPos groundspawnaux), [], 0, "CAN_COLLIDE"];
+_casspirshield8 attachTo [_casspir,[-0.95,-0.6,-0.95]]; 
+_casspirshield8 animateSource ["Door_1_noSound_source", 1, true];  
+_casspirshield8 setdir 270; 
+_casspirshield8 enableweapondisassembly false;
+sleep 1;
+_casspirshield9 = createVehicle ["B_shield_lxWS", (getPos groundspawnaux), [], 0, "CAN_COLLIDE"];
+_casspirshield9 attachTo [_casspir,[0.9,-0.6,-0.9]]; 
+_casspirshield9 animateSource ["Door_1_noSound_source", 1, true];  
+_casspirshield9 setdir 90; 
+_casspirshield9 enableweapondisassembly false;
+sleep 1;
+_casspirshield10 = createVehicle ["B_shield_lxWS", (getPos groundspawnaux), [], 0, "CAN_COLLIDE"];
+_casspirshield10 attachTo [_casspir,[0.9,-1.3,-0.9]]; 
+_casspirshield10 animateSource ["Door_1_noSound_source", 1, true];  
+_casspirshield10 setdir 90; 
+_casspirshield10 enableweapondisassembly false;
+sleep 1;
+_casspirshield11 = createVehicle ["B_shield_lxWS", (getPos groundspawnaux), [], 0, "CAN_COLLIDE"];
+_casspirshield11 attachTo [_casspir,[0.9,-1.8,-0.9]]; 
+_casspirshield11 animateSource ["Door_1_noSound_source", 1, true];  
+_casspirshield11 setdir 90; 
+_casspirshield11 enableweapondisassembly false;
+sleep 1;
+_casspirshield12 = createVehicle ["B_shield_lxWS", (getPos groundspawnaux), [], 0, "CAN_COLLIDE"];
+_casspirshield12 attachTo [_casspir,[0.9,-2.3,-0.9]]; 
+_casspirshield12 animateSource ["Door_1_noSound_source", 1, true]; 
+_casspirshield12 setdir 90; 
+_casspirshield12 enableweapondisassembly false;
+sleep 1;
+_casspirshield13 = createVehicle ["B_shield_lxWS", (getPos groundspawnaux), [], 0, "CAN_COLLIDE"];
+_casspirshield13 attachTo [_casspir,[0.9,-2.95,-0.9]]; 
+_casspirshield13 animateSource ["Door_1_noSound_source", 1, true];  
+_casspirshield13 setdir 90; 
+_casspirshield13 enableweapondisassembly false;
+sleep 1;
+_casspirupshield1 = createVehicle ["B_shield_lxWS", (getPos groundspawnaux), [], 0, "CAN_COLLIDE"];
+_casspirupshield1 attachTo [_casspir,[0,-0.1,0.85]];
+_casspirupshield1 enableweapondisassembly false;
+_y = 0; _p = 90; _r = 0; 
+_casspirupshield1 setVectorDirAndUp [ 
+ [sin _y * cos _p, cos _y * cos _p, sin _p], 
+ [[sin _r, -sin _p, cos _r * cos _p], -_y] call BIS_fnc_rotateVector2D];
+sleep 1;
+_casspirupshield2 = createVehicle ["B_shield_lxWS", (getPos groundspawnaux), [], 0, "CAN_COLLIDE"];
+_casspirupshield2 attachTo [_casspir,[0,-0.9,0.85]];
+_casspirupshield2 enableweapondisassembly false;
+_y = 0; _p = 90; _r = 0; 
+_casspirupshield2 setVectorDirAndUp [ 
+ [sin _y * cos _p, cos _y * cos _p, sin _p], 
+ [[sin _r, -sin _p, cos _r * cos _p], -_y] call BIS_fnc_rotateVector2D]; 
+sleep 1;
+_casspirupshield3 = createVehicle ["B_shield_lxWS", (getPos groundspawnaux), [], 0, "CAN_COLLIDE"];
+_casspirupshield3 attachTo [_casspir,[0,-2.6,0.85]];
+_casspirupshield3 enableweapondisassembly false;
+_y = 180; _p = 90; _r = 0; 
+_casspirupshield3 setVectorDirAndUp [ 
+ [sin _y * cos _p, cos _y * cos _p, sin _p], 
+ [[sin _r, -sin _p, cos _r * cos _p], -_y] call BIS_fnc_rotateVector2D]; 
+sleep 1;
+_casspirupshield4 = createVehicle ["B_shield_lxWS", (getPos groundspawnaux), [], 0, "CAN_COLLIDE"];
+_casspirupshield4 attachTo [_casspir,[0,-3.4,0.85]];
+_casspirupshield4 enableweapondisassembly false;
+_y = 180; _p = 90; _r = 0; 
+_casspirupshield4 setVectorDirAndUp [ 
+ [sin _y * cos _p, cos _y * cos _p, sin _p], 
+ [[sin _r, -sin _p, cos _r * cos _p], -_y] call BIS_fnc_rotateVector2D];
+_casspirwinshield1a = createVehicle ["B_shield_lxWS", (getPos groundspawnaux), [], 0, "CAN_COLLIDE"];
+_casspirwinshield1a attachTo [_casspir,[0.4,1.2,0.6]]; 
+_casspirwinshield1a animateSource ["Door_1_noSound_source", 1, true];
+_casspirwinshield1a enableweapondisassembly false;
+_y = 0; _p = 80; _r = 0; 
+_casspirwinshield1a setVectorDirAndUp [ 
+ [sin _y * cos _p, cos _y * cos _p, sin _p], 
+ [[sin _r, -sin _p, cos _r * cos _p], -_y] call BIS_fnc_rotateVector2D];
+sleep 1;
+_casspirwinshield1b = createVehicle ["B_shield_lxWS", (getPos groundspawnaux), [], 0, "CAN_COLLIDE"];
+_casspirwinshield1b attachTo [_casspir,[0,1.2,0.6]]; 
+_casspirwinshield1b animateSource ["Door_1_noSound_source", 1, true];
+_casspirwinshield1b enableweapondisassembly false;
+_y = 0; _p = 80; _r = 0; 
+_casspirwinshield1b setVectorDirAndUp [ 
+ [sin _y * cos _p, cos _y * cos _p, sin _p], 
+ [[sin _r, -sin _p, cos _r * cos _p], -_y] call BIS_fnc_rotateVector2D];
+sleep 1;
+_casspirwinshield1c = createVehicle ["B_shield_lxWS", (getPos groundspawnaux), [], 0, "CAN_COLLIDE"];
+_casspirwinshield1c attachTo [_casspir,[-0.4,1.2,0.6]]; 
+_casspirwinshield1c animateSource ["Door_1_noSound_source", 1, true];
+_casspirwinshield1c enableweapondisassembly false;
+_y = 0; _p = 80; _r = 0; 
+_casspirwinshield1c setVectorDirAndUp [ 
+ [sin _y * cos _p, cos _y * cos _p, sin _p], 
+ [[sin _r, -sin _p, cos _r * cos _p], -_y] call BIS_fnc_rotateVector2D];
+sleep 1;
+_casspirwinshield2 = createVehicle ["B_shield_lxWS", (getPos groundspawnaux), [], 0, "CAN_COLLIDE"];
+_casspirwinshield2 attachTo [_casspir,[0.4,1.9,-0.2]]; 
+_casspirwinshield2 animateSource ["Door_1_noSound_source", 1, true];
+_casspirwinshield2 enableweapondisassembly false;
+_y = 0; _p = 55; _r = 0; 
+_casspirwinshield2 setVectorDirAndUp [ 
+ [sin _y * cos _p, cos _y * cos _p, sin _p], 
+ [[sin _r, -sin _p, cos _r * cos _p], -_y] call BIS_fnc_rotateVector2D];
+sleep 1;
+_casspirwinshield3 = createVehicle ["B_shield_lxWS", (getPos groundspawnaux), [], 0, "CAN_COLLIDE"];
+_casspirwinshield3 attachTo [_casspir,[0,1.9,-0.2]]; 
+_casspirwinshield3 animateSource ["Door_1_noSound_source", 1, true];
+_casspirwinshield3 enableweapondisassembly false;
+_y = 0; _p = 55; _r = 0; 
+_casspirwinshield3 setVectorDirAndUp [ 
+ [sin _y * cos _p, cos _y * cos _p, sin _p], 
+ [[sin _r, -sin _p, cos _r * cos _p], -_y] call BIS_fnc_rotateVector2D];
+sleep 1;
+_casspirwinshield4 = createVehicle ["B_shield_lxWS", (getPos groundspawnaux), [], 0, "CAN_COLLIDE"];
+_casspirwinshield4 attachTo [_casspir,[-0.4,1.9,-0.2]]; 
+_casspirwinshield4 animateSource ["Door_1_noSound_source", 1, true];
+_casspirwinshield4 enableweapondisassembly false;
+_y = 0; _p = 55; _r = 0; 
+_casspirwinshield4 setVectorDirAndUp [ 
+ [sin _y * cos _p, cos _y * cos _p, sin _p], 
+ [[sin _r, -sin _p, cos _r * cos _p], -_y] call BIS_fnc_rotateVector2D];
+sleep 1;
+//Weapon
+_casspirgun = createVehicle ["B_HMG_01_A_F", (getPos groundspawnaux), [], 0, "CAN_COLLIDE"];
+_casspirgun attachTo [_casspir,[0.1,-0.2,1.75]];
+_casspirgun disableCollisionWith _casspir;
+_casspirgun enableWeaponDisassembly false;
+createVehicleCrew _casspirgun;
+hint 'Protected Truck Ready';
